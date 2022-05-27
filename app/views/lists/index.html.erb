@@ -1,9 +1,9 @@
 <div class="container">
 <ul>
   <% @lists.each do |list| %>
-
-    <li><i class="fa fa-check-square-o"></i><%= link_to list.name, list_path(list) %></li>
+     <li><%= list.name %></li>
+      <%= link_to "See details", list_path(list), class: "btn btn-primary" %>
   <% end %>
 </ul>
-<lt class="btn btn-danger"><%=link_to "Add New movie", lists_path%></lt>
+<%= link_to "create new list", new_list_path%>
 </div>

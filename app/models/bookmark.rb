@@ -1,3 +1,6 @@
+# frozen_string_literal: false
+
+# controller
 class Bookmark < ApplicationRecord
   belongs_to :movie
   belongs_to :list

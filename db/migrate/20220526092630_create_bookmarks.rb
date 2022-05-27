@@ -1,3 +1,6 @@
+# frozen_string_literal: false
+
+# controller
 class CreateBookmarks < ActiveRecord::Migration[6.1]
   def change
     create_table :bookmarks do |t|

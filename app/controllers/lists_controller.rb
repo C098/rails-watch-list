@@ -1,3 +1,6 @@
+# frozen_string_literal: false
+
+# controller
 class ListsController < ApplicationController
   def index
     @lists = List.all
@@ -18,6 +21,7 @@ class ListsController < ApplicationController
 
   def show
     @list = List.find(params[:id])
+    @bookmark = Bookmark.new
   end
 
   private

@@ -1,3 +1,6 @@
+# frozen_string_literal: false
+
+# controller
 class List < ApplicationRecord
   has_many :bookmarks, dependent: :destroy
   has_many :movies, through: :bookmarks

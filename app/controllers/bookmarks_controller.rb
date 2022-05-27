@@ -1,6 +1,10 @@
+# frozen_string_literal: false
+
+# controller
 class BookmarksController < ApplicationController
   def new
     @bookmark = Bookmark.new
+    @list = List.find(params[:list_id])
   end
 
   def create
